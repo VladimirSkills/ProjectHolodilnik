@@ -1,4 +1,4 @@
-## Project of testing <a href = "https://www.mvideo.ru/">M.Video</a> website.
+## Project of testing <a href = "https://www.mvideo.ru/" target="_blank">M.Video</a> website.
 ### Project structure:
 
 
