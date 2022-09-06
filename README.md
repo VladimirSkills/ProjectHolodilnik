@@ -38,7 +38,7 @@
 
 ### Ссылка на <a href = "https://docs.google.com/spreadsheets/d/1FHDxmiSO98ZI1dfT5XpDk1JZF2L_adC8/edit?usp=sharing&ouid=113320492480885390471&rtpof=true&sd=true" target="_blank">ЧЕК-ЛИСТ</a> с комментариями.
 
-
+### Окружение...
 
 
 <Html>
