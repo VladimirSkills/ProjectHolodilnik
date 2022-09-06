@@ -25,7 +25,7 @@ def num_format(num_x):  # числовой формат:
 
 # pytest -v --driver Chrome tests\test_card_basket.py::test_product_card
 def test_product_card(browser):
-    """Тестируем Карточку товара.
+    """Тестируем Карточки товаров на странице.
     Проверяем, что есть наименование, фото, цена, код товара, описание, статус наличия, кнопка <В корзину>"""
     driver = browser
     main_page = MainPage(driver)
@@ -59,8 +59,7 @@ def test_product_card(browser):
         baskets = page.find_elem_basketsforcard()
         # Делаем скриншот:
         driver.save_screenshot(f"../screenshots/{inspect.currentframe().f_code.co_name}.png")
-
-        # Делаем проверку, что все категории карточки товара присутствуют:
+        # Делаем проверку, что все категории в карточках товаров на странице присутствуют:
         for i in range(len(productsname)):
             assert productsname[i].text != ""
             assert locateimages[i].get_attribute('src') != ""
