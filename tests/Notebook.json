@@ -1,0 +1,494 @@
+>>>[1]<>test_registration_valid
+Email: 'c4p76tluu4w@bheps.com'
+>Name: 'c4p76tluu4w'
+>Domain: 'bheps.com'
+Id letter: '7847189'
+Registration code: 6830
+
+>> Результат теста: PASSED ★
+>> Время выполнения теста: 13.95 сек
+
+>>>[2]<>test_authorization_valid
+>> Результат теста: PASSED ★
+>> Время выполнения теста: 2.948 сек
+
+>>>[3]<>test_registration_not_valid[]
+>> Результат теста: FAILED ✖
+>> Время выполнения теста: 15.882 сек
+
+>>>[3]<>test_registration_not_valid[   ]
+>> Результат теста: FAILED ✖
+>> Время выполнения теста: 12.233 сек
+
+>>>[3]<>test_registration_not_valid[12345]
+>> Результат теста: FAILED ✖
+>> Время выполнения теста: 12.747 сек
+
+>>>[4]<>test_authorization_not_valid[not active pass-not active email]
+>> Результат теста: PASSED ★
+>> Время выполнения теста: 5.667 сек
+
+>>>[4]<>test_authorization_not_valid[not active pass-active email]
+>> Результат теста: PASSED ★
+>> Время выполнения теста: 2.645 сек
+
+>>>[4]<>test_authorization_not_valid[valid pass from another email-not active email]
+>> Результат теста: PASSED ★
+>> Время выполнения теста: 2.577 сек
+
+>>>[4]<>test_authorization_not_valid[valid pass from another email-active email]
+>> Результат теста: PASSED ★
+>> Время выполнения теста: 4.575 сек
+
+>>>[4]<>test_authorization_not_valid[not valid pass-not active email]
+>> Результат теста: PASSED ★
+>> Время выполнения теста: 2.672 сек
+
+>>>[4]<>test_authorization_not_valid[not valid pass-active email]
+>> Результат теста: PASSED ★
+>> Время выполнения теста: 2.665 сек
+
+>>>[5]<>test_load_main_page
+>> Время загрузки элементов на главной странице сайта: 2.39 сек
+>> Результат теста: PASSED ★
+>> Время выполнения теста: 2.397 сек
+
+>>>[6]<>test_middle_load_page
+>> Открываем сайт 5 раз подряд...
+>> Среднее время загрузки главной страницы сайта: 1.33 сек
+>> Ожидание: middle loading <= 2 сек
+>> Результат теста: PASSED ★
+>> Время выполнения теста: 6.635 сек
+
+>>>[7]<>test_button_catalog
+>> Результат теста: PASSED ★
+>> Время выполнения теста: 2.407 сек
+
+>>>[8]<>test_menu_smartphones
+>> Результат теста: PASSED ★
+>> Время выполнения теста: 6.479 сек
+
+>>>[9]<>test_menu_tvsets
+>> Результат теста: PASSED ★
+>> Время выполнения теста: 5.469 сек
+
+>>>[10]<>test_menu_audiovideo
+>> Результат теста: PASSED ★
+>> Время выполнения теста: 5.242 сек
+
+>>>[11]<>test_menu_comptechnica
+>> Результат теста: PASSED ★
+>> Время выполнения теста: 5.989 сек
+
+>>>[12]<>test_menu_refrigerator
+>> Результат теста: PASSED ★
+>> Время выполнения теста: 8.542 сек
+
+>>>[13]<>test_menu_washers
+>> Результат теста: PASSED ★
+>> Время выполнения теста: 11.624 сек
+
+>>>[14]<>test_menu_builtin
+>> Результат теста: PASSED ★
+>> Время выполнения теста: 7.88 сек
+
+>>>[15]<>test_menu_diswashers
+>> Результат теста: PASSED ★
+>> Время выполнения теста: 5.095 сек
+
+>>>[16]<>test_menu_gasstoves
+>> Результат теста: PASSED ★
+>> Время выполнения теста: 7.922 сек
+
+>>>[17]<>test_menu_forkitchen
+>> Результат теста: PASSED ★
+>> Время выполнения теста: 6.577 сек
+
+>>>[18]<>test_menu_domestichome
+>> Результат теста: PASSED ★
+>> Время выполнения теста: 5.638 сек
+
+>>>[19]<>test_menu_beauty
+>> Результат теста: PASSED ★
+>> Время выполнения теста: 7.767 сек
+
+>>>[20]<>test_menu_climatic
+>> Результат теста: PASSED ★
+>> Время выполнения теста: 25.747 сек
+
+>>>[21]<>test_menu_construction
+>> Результат теста: PASSED ★
+>> Время выполнения теста: 5.58 сек
+
+>>>[22]<>test_menu_cottagegard
+>> Результат теста: PASSED ★
+>> Время выполнения теста: 9.727 сек
+
+>>>[23]<>test_menu_sportgoods
+>> Результат теста: PASSED ★
+>> Время выполнения теста: 6.155 сек
+
+>>>[24]<>test_menu_kids
+>> Результат теста: PASSED ★
+>> Время выполнения теста: 7.637 сек
+
+>>>[25]<>test_menu_discounted
+>> Уценённые товары: Телевизоры
+>> Уценённые товары: Аудио-видео
+>> Уценённые товары: Холодильники
+>> Уценённые товары: Стиральные машины
+>> Уценённые товары: Встраиваемая техника
+>> Уценённые товары: Посудомоечные машины
+>> Уценённые товары: Плиты
+>> Уценённые товары: Техника для кухни
+>> Уценённые товары: Техника для дома
+>> Уценённые товары: Климатическая техника
+>> Уценённые товары: Строительство и ремонт
+>> Уценённые товары: Товары для дома и сада
+>> Уценённые товары: Детские товары
+>> Наименование товара: Кронштейн для телевизоров Harper TVT-5530
+>> Изображение товара: https://holod.ru/pics/clean/small/11/807711_0.jpg
+>> Цена товара с учётом скидки: 492 руб.
+>> Скидка: 87 руб.
+>> Причина уценки:
+Упаковка повреждена. Царапины и потертости. Комплект полный.
+>> Результат теста: PASSED ★
+>> Время выполнения теста: 5.923 сек
+
+>>>[26]<>test_menu_action
+>> Результат теста: PASSED ★
+>> Время выполнения теста: 4.24 сек
+
+>>>[27]<>test_menu_brandaction
+>> Количество текущих акций: 16
+>> Ссылки на акции:
+>> -https://www.holodilnik.ru/action/
+>> -https://www.holodilnik.ru/action/atlant/
+>> -https://www.holodilnik.ru/action/bosch/
+>> -https://www.holodilnik.ru/action/candy/
+>> -https://www.holodilnik.ru/action/haier/
+>> -https://www.holodilnik.ru/action/honor/
+>> -https://www.holodilnik.ru/action/hotpoint_ariston/
+>> -https://www.holodilnik.ru/action/hyundai/
+>> -https://www.holodilnik.ru/action/indesit/
+>> -https://www.holodilnik.ru/action/kitfort/
+>> -https://www.holodilnik.ru/action/lg/
+>> -https://www.holodilnik.ru/action/liebherr/
+>> -https://www.holodilnik.ru/action/midea/
+>> -https://www.holodilnik.ru/action/rowenta/
+>> -https://www.holodilnik.ru/action/tefal/
+>> -https://www.holodilnik.ru/action/xiaomi/
+>> -https://www.holodilnik.ru/action/zugel/
+>> Результат теста: PASSED ★
+>> Время выполнения теста: 3.421 сек
+
+>>>[28]<>test_menu_brands
+>> Результат теста: PASSED ★
+>> Время выполнения теста: 6.087 сек
+
+>>>[29]<>test_menu_popularbrands
+>> Количество популярных брендов: 35
+>> Ссылки на бренды:
+>> -https://www.holodilnik.ru/brands/apple/
+>> -https://www.holodilnik.ru/brands/arnica/
+>> -https://www.holodilnik.ru/brands/atlant/
+>> -https://www.holodilnik.ru/brands/bosch/
+>> -https://www.holodilnik.ru/brands/candy/
+>> -https://www.holodilnik.ru/brands/caso/
+>> -https://www.holodilnik.ru/brands/centek/
+>> -https://www.holodilnik.ru/brands/delonghi/
+>> -https://www.holodilnik.ru/brands/electrolux/
+>> -https://www.holodilnik.ru/brands/haier/
+>> -https://www.holodilnik.ru/brands/hansa/
+>> -https://www.holodilnik.ru/brands/honor/
+>> -https://www.holodilnik.ru/brands/hotpoint_ariston/
+>> -https://www.holodilnik.ru/brands/hyundai/
+>> -https://www.holodilnik.ru/brands/indesit/
+>> -https://www.holodilnik.ru/brands/jacky_s/
+>> -https://www.holodilnik.ru/brands/karcher/
+>> -https://www.holodilnik.ru/brands/kitchenaid/
+>> -https://www.holodilnik.ru/brands/kitfort/
+>> -https://www.holodilnik.ru/brands/korting/
+>> -https://www.holodilnik.ru/brands/kuppersberg/
+>> -https://www.holodilnik.ru/action/lg_technologies/
+>> -https://www.holodilnik.ru/brands/liebherr/
+>> -https://www.holodilnik.ru/brands/midea/
+>> -https://www.holodilnik.ru/brands/miele/
+>> -https://www.holodilnik.ru/brands/philips/
+>> -https://www.holodilnik.ru/brands/redmond/
+>> -https://www.holodilnik.ru/brands/rondell/
+>> -https://www.holodilnik.ru/brands/rowenta/
+>> -https://www.holodilnik.ru/brands/samsung/
+>> -https://www.holodilnik.ru/brands/schaub_lorenz/
+>> -https://www.holodilnik.ru/brands/tefal/
+>> -https://www.holodilnik.ru/brands/xiaomi/
+>> -https://www.holodilnik.ru/brands/zigmund__shtain/
+>> -https://www.holodilnik.ru/brands/zugel/
+>> Результат теста: PASSED ★
+>> Время выполнения теста: 3.501 сек
+
+>>>[30]<>test_find_scrollup
+>> Результат теста: PASSED ★
+>> Время выполнения теста: 2.67 сек
+
+>>>[31]<>test_click_scrollup
+>> Результат теста: PASSED ★
+>> Время выполнения теста: 3.986 сек
+
+>>>[32]<>test_menu_header
+>> Результат теста: PASSED ★
+>> Время выполнения теста: 14.702 сек
+
+>>>[33]<>test_click_logoimage
+>> Результат теста: PASSED ★
+>> Время выполнения теста: 3.457 сек
+
+>>>[34]<>test_click_body
+>> Товар дня:
+Двухкамерный холодильник Liebherr CUno 2831-22 001 оранжевый в Самаре
+>> Результат теста: PASSED ★
+>> Время выполнения теста: 26.386 сек
+
+>>>[35]<>test_click_footer
+>> О компании: https://www.holodilnik.ru/about/
+>> Магазины: https://www.holodilnik.ru/shops/samara/
+>> Контакты: https://samara.holodilnik.ru/delivery/#phone
+>> Новости: https://www.holodilnik.ru/news/
+>> Реквизиты: https://samara.holodilnik.ru/delivery/#rekv
+>> Вакансии: https://www.holodilnik.ru/job/
+>> Для поставщиков: https://www.holodilnik.ru/supplier/
+>> Оптовые продажи: https://www.holodilnik.ru/wholesale/
+>> Корпоративным клиентам: https://www.holodilnik.ru/corp/
+>> Региональным клиентам: https://www.holodilnik.ru/regions/
+>> Доставка: https://samara.holodilnik.ru/delivery/
+>> Способы оплаты: https://samara.holodilnik.ru/delivery/#pay
+>> Получение техники: https://samara.holodilnik.ru/delivery/#tovar
+>> Законодательство: https://samara.holodilnik.ru/delivery/#law
+>> Клуб привилегий Кстати: https://www.holodilnik.ru/kstati/
+>> Дисконтная программа: https://www.holodilnik.ru/discount_cards/
+>> Товары в рассрочку: https://www.holodilnik.ru/action/vygodnaya_raccrochka/
+>> Акции: https://www.holodilnik.ru/action/
+>> Лидеры продаж: https://www.holodilnik.ru/action/leaders/
+>> Обзоры новинок: https://www.holodilnik.ru/action/new/
+>> Уцененные товары: https://samara.holodilnik.ru/repair/
+>> Распродажа: https://samara.holodilnik.ru/sales/
+>> Бренд-зоны: https://www.holodilnik.ru/brands/
+>> Подарочные карты: https://www.holodilnik.ru/gift_cards/
+>> Гарантийное обслуживание: https://www.holodilnik.ru/garantiya/
+>> Программа ”Комфорт+”: https://www.holodilnik.ru/komfort/
+>> Установка техники: https://samara.holodilnik.ru/service_center/
+>> Страхование техники: https://www.holodilnik.ru/vsk/
+>> Статьи: https://www.holodilnik.ru/ch/
+>> Возврат или обмен товара: https://www.holodilnik.ru/claims/
+>> Обмен мнениями (Форум): https://www.holodilnik.ru/forum/
+>> Защита персональных данных: https://www.holodilnik.ru/defence/
+>> Политика использования cookie: https://www.holodilnik.ru/about/cookies/
+>> Пользовательское соглашение: https://www.holodilnik.ru/about/user_agreement/
+>> Публичная оферта: https://www.holodilnik.ru/about/public_offer/
+>> Результат теста: PASSED ★
+>> Время выполнения теста: 3.669 сек
+
+>>>[36]<>test_search_by_name
+>> Результат теста: PASSED ★
+>> Время выполнения теста: 10.857 сек
+
+>>>[37]<>test_search_by_code
+>> Результат теста: PASSED ★
+>> Время выполнения теста: 8.709 сек
+
+>>>[38]<>test_search_valid[name_rus]
+>> Результаты поиска:
+>> Найдено товаров: 283
+>> Результат теста: PASSED ★
+>> Время выполнения теста: 8.507 сек
+
+>>>[38]<>test_search_valid[name_en]
+>> Результаты поиска:
+>> Мы не смогли найти такие товары. Рекомендуем обратить внимание: 50
+>> Результат теста: PASSED ★
+>> Время выполнения теста: 14.964 сек
+
+>>>[38]<>test_search_valid[code]
+>> Результаты поиска:
+>> Найдено товаров: 1
+>> Результат теста: PASSED ★
+>> Время выполнения теста: 5.287 сек
+
+>>>[38]<>test_search_valid[name + code]
+>> Результаты поиска:
+>> Мы не смогли найти такие товары. Рекомендуем обратить внимание: 50
+>> Результат теста: PASSED ★
+>> Время выполнения теста: 8.179 сек
+
+>>>[38]<>test_search_valid[digit]
+>> Результаты поиска:
+>> Найдено товаров: 1
+>> Результат теста: PASSED ★
+>> Время выполнения теста: 5.085 сек
+
+>>>[39]<>test_search_notvalid[Empty]
+>> Результат теста: FAILED ✖
+>> Время выполнения теста: 15.29 сек
+
+>>>[39]<>test_search_notvalid[Spaces]
+>> Результат теста: FAILED ✖
+>> Время выполнения теста: 17.851 сек
+
+>>>[39]<>test_search_notvalid[255 symbols]
+>> Результат теста: FAILED ✖
+>> Время выполнения теста: 16.868 сек
+
+>>>[39]<>test_search_notvalid[chinese]
+>> Результаты поиска:
+>> Мы не смогли найти такие товары. Рекомендуем обратить внимание: 50
+>> Результат теста: PASSED ★
+>> Время выполнения теста: 6.865 сек
+
+>>>[39]<>test_search_notvalid[special]
+>> Результаты поиска:
+>> Мы не смогли найти такие товары. Рекомендуем обратить внимание: 50
+>> Результат теста: PASSED ★
+>> Время выполнения теста: 6.898 сек
+
+>>>[39]<>test_search_notvalid[big_number]
+>> Результат теста: FAILED ✖
+>> Время выполнения теста: 17.784 сек
+
+>>>[39]<>test_search_notvalid[script-XSS]
+>> Результаты поиска:
+>> Мы не смогли найти такие товары. Рекомендуем обратить внимание: 50
+>> Результат теста: PASSED ★
+>> Время выполнения теста: 10.329 сек
+
+>>>[40]<>test_add_favorites
+>> Результат теста: PASSED ★
+>> Время выполнения теста: 9.462 сек
+
+>>>[41]<>test_social_network
+>> Результат теста: PASSED ★
+>> Время выполнения теста: 7.414 сек
+
+>>>[42]<>test_change_town
+>> Результат теста: PASSED ★
+>> Время выполнения теста: 3.533 сек
+
+>>>[43]<>test_goods_counter
+В разделе: Морозильники (морозильные камеры) - 252 шт. товаров и 11 страниц.
+Ссылка на последнюю страницу: https://samara.holodilnik.ru/refrigerator/freezing_chambers/?page=11
+>> Результат теста: PASSED ★
+>> Время выполнения теста: 10.926 сек
+
+>>>[44]<>test_filter_price
+>> Найдено 7 товаров в пределах указанных цен: 71957 - 161991
+>> Мин. цена найденных товаров: 79990
+>> Макс. цена найденных товаров: 159990
+>> Результат теста: PASSED ★
+>> Время выполнения теста: 11.391 сек
+
+>>>[45]<>test_filter_btn_clear
+>> Значение счётчика:
+>> -до применения фильтра: 34
+>> -после применения фильтра: 10
+>> -после нажатия кнопки Очистить: 34
+>> Результат теста: PASSED ★
+>> Время выполнения теста: 9.636 сек
+
+>>>[46]<>test_filter_find_producer
+>> Результат теста: PASSED ★
+>> Время выполнения теста: 8.881 сек
+
+>>>[47]<>test_filter_find_opersystem
+>> Результат теста: PASSED ★
+>> Время выполнения теста: 13.54 сек
+
+>>>[48]<>test_filter_not_available
+>> Результат теста: PASSED ★
+>> Время выполнения теста: 11.387 сек
+
+>>>[49]<>test_sort_height
+>> Результат теста: PASSED ★
+>> Время выполнения теста: 9.412 сек
+
+>>>[50]<>test_product_card
+>> Результат теста: PASSED ★
+>> Время выполнения теста: 7.607 сек
+
+>>>[51]<>test_put_basket
+>> Результат теста: PASSED ★
+>> Время выполнения теста: 10.568 сек
+
+>>>[52]<>test_delete_from_basket
+>> Результат теста: PASSED ★
+>> Время выполнения теста: 9.807 сек
+
+>>>[53]<>test_input_basket
+>> Результат теста: PASSED ★
+>> Время выполнения теста: 3.474 сек
+
+>>>[54]<>test_counter_basket
+>> Результат теста: PASSED ★
+>> Время выполнения теста: 8.564 сек
+
+>>>[55]<>test_save_goods_basket
+>> Результат теста: PASSED ★
+>> Время выполнения теста: 11.154 сек
+
+>>>[56]<>test_clear_basket
+>> Результат теста: PASSED ★
+>> Время выполнения теста: 16.426 сек
+
+>>>[57]<>test_add_options_basket
+>> Дополнительная опция: Страховка ВСК на 1 год
+«Год без хлопот»
+>> Цена товара: 17990
+>> Итоговая цена с доп. опцией: 18490
+>> Результат теста: PASSED ★
+>> Время выполнения теста: 8.169 сек
+
+>>>[58]<>test_checkout_basket
+>> Подтверждение заказа: Готово!
+Заказ №5029687
+Ваш заказ успешно оформлен и принят в обработку.
++7 (937) 871-59-42, lz2vdf1f13@wuuvo.com
+>> Результат теста: PASSED ★
+>> Время выполнения теста: 36.469 сек
+
+>>>[59]<>test_add_limit_goods[10]
+>> Результат теста: PASSED ★
+>> Время выполнения теста: 11.496 сек
+
+>>>[59]<>test_add_limit_goods[30]
+>> Результат теста: PASSED ★
+>> Время выполнения теста: 10.034 сек
+
+>>>[59]<>test_add_limit_goods[50]
+>> Результат теста: PASSED ★
+>> Время выполнения теста: 10.444 сек
+
+>>>[59]<>test_add_limit_goods[60]
+>> Результат теста: FAILED ✖
+>> Время выполнения теста: 10.656 сек
+
+>>>[60]<>test_field_num_notvalid[empty]
+>> Результат теста: PASSED ★
+>> Время выполнения теста: 11.312 сек
+
+>>>[60]<>test_field_num_notvalid[space]
+>> Результат теста: PASSED ★
+>> Время выполнения теста: 9.215 сек
+
+>>>[60]<>test_field_num_notvalid[minus]
+>> Результат теста: PASSED ★
+>> Время выполнения теста: 10.175 сек
+
+>>>[60]<>test_field_num_notvalid[symbol]
+>> Результат теста: PASSED ★
+>> Время выполнения теста: 10.177 сек
+
+>>>[60]<>test_field_num_notvalid[letters]
+>> Результат теста: PASSED ★
+>> Время выполнения теста: 10.638 сек
+
+>>>[60]<>test_field_num_notvalid[chinese]
+>> Результат теста: PASSED ★
+>> Время выполнения теста: 10.324 сек
