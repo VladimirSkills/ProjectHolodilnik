@@ -31,7 +31,7 @@
 <br>При необходимости запуска из Terminal можно закомментировать строки, сохраняющие данные в файл, в т.ч. в файле conftest.py
 </Html>
 
-### Ссылка на <a href = "[https://samara.holodilnik.ru/](https://docs.google.com/spreadsheets/d/1FHDxmiSO98ZI1dfT5XpDk1JZF2L_adC8/edit?usp=sharing&ouid=113320492480885390471&rtpof=true&sd=true)" target="_blank">ЧЕК-ЛИСТ</a> с комментариями.
+### Ссылка на <a href = "https://docs.google.com/spreadsheets/d/1FHDxmiSO98ZI1dfT5XpDk1JZF2L_adC8/edit?usp=sharing&ouid=113320492480885390471&rtpof=true&sd=true" target="_blank">ЧЕК-ЛИСТ</a> с комментариями.
 
 
 
