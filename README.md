@@ -1,4 +1,4 @@
-## Project of testing <a href = "https://samara.holodilnik.ru/" target="_blank">Holodilnik</a> website.
+## Project of testing <a href = "https://samara.holodilnik.ru/" target="_blank">Holodilnik</a> website ©
 ### Project structure:
 
 ### Папка tests:
