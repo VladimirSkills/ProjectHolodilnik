@@ -2,10 +2,12 @@
 
 from pages.API_RegMail import RegEmail
 from pages.PageAutho import RegPage, AuthPage
+from pages.Settings import valid_email, valid_password
 import time
 import pytest
+import allure
 from faker import Faker  # Для генерации случайного password
-from pages.Settings import valid_email, valid_password
+
 
 """
 ВНИМАНИЕ...
@@ -35,6 +37,7 @@ def generate_string(num):
 
 
 # pytest -v --driver Chrome tests\test_authorization.py::TestAuthorization
+@allure.severity(allure.severity_level.CRITICAL)
 class TestAuthorization:
     """Проверка Регистрации и Авторизации на сайте"""
 
@@ -44,6 +47,7 @@ class TestAuthorization:
     email_reg = result_email[0]  # из запроса получаем валидный email
 
     # pytest -v --driver Chrome tests\test_authorization.py::TestAuthorization::test_registration_valid
+    @allure.severity(allure.severity_level.CRITICAL)
     def test_registration_valid(self, browser):
         """Тестируем валидный вариант регистрации при использовании email и получения кода для входа на почту.
         Используем виртуальный почтовый ящик '1secmail.com' и получаем данные через GET запросы.
@@ -146,6 +150,7 @@ class TestAuthorization:
                 file.write(f">> Результат теста: {result_status} {symbol}\n")
 
     # pytest -v --driver Chrome tests\test_authorization.py::TestAuthorization::test_authorization_valid
+    @allure.severity(allure.severity_level.NORMAL)
     def test_authorization_valid(self, browser):
         """Валидное тестирование Авторизации.
         На сайте стоит ограничение на 10 авторизаций. После интервал = 10 минут"""
@@ -181,7 +186,7 @@ class TestAuthorization:
             page.btn_click_login()
             # Проверяем, что мы прошли авторизацию и зашли в Личный кабинет:
             # Так как элемент перекрывается всплывающим меню (NameUser), для клика по нему используем JS.
-            driver.implicitly_wait(5)  # установка неявного ожидания
+            driver.implicitly_wait(3)  # установка неявного ожидания
             driver.execute_script("arguments[0].click();", page.btn_click_user())
             assert page.get_relative_link() == '/usercp/', "No authorization!"
             result_status = "PASSED"
