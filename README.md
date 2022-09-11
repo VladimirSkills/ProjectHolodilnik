@@ -34,6 +34,8 @@
 
 ### Ссылка на <a href = "https://docs.google.com/spreadsheets/d/1rvkus04rJtl0khkaxSrmquCr4JAlLedy/edit?usp=sharing&ouid=113320492480885390471&rtpof=true&sd=true" target="_blank">ЧЕК-ЛИСТ</a> с комментариями.
 
+### Моя инструкция по созданию<a href = "https://drive.google.com/file/d/1RprZxwrH0PeFiyAAXMzZ00FfuB8u5XwX/view?usp=sharing" target="_blank">Allure Report</a>.
+
 ### Окружение:
 Windows 10 Домашняя, версия 20H2, сборка 19042.1466, дата установки 08.03.2021
 <br>Google Chrome, Версия 105.0.5195.52 (Официальная сборка), (64 бит)
