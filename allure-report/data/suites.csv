@@ -1,0 +1,6 @@
+"Status","Start Time","Stop Time","Duration in ms","Parent Suite","Suite","Sub Suite","Test Class","Test Method","Name","Description"
+"passed","Sun Sep 11 02:07:53 SAMT 2022","Sun Sep 11 02:07:54 SAMT 2022","1798","","test_authorization","TestAuthorization","","","test_authorization_valid","Валидное тестирование Авторизации.
+        На сайте стоит ограничение на 10 авторизаций. После интервал = 10 минут"
+"passed","Sun Sep 11 02:07:39 SAMT 2022","Sun Sep 11 02:07:53 SAMT 2022","14041","","test_authorization","TestAuthorization","","","test_registration_valid","Тестируем валидный вариант регистрации при использовании email и получения кода для входа на почту.
+        Используем виртуальный почтовый ящик '1secmail.com' и получаем данные через GET запросы.
+        Также сразу создаём пароль через приложение Faker и сохраняем учётные данные в файл settings."
