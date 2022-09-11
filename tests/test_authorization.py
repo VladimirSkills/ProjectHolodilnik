@@ -211,6 +211,7 @@ class TestAuthorization:
 
         driver = browser  # транспортируем драйвер
         # Импортируем действия и открываем сайт:
+        auth_page = AuthPage(driver)
         page = RegPage(driver)
         result_status = ""
         try:
@@ -228,9 +229,9 @@ class TestAuthorization:
             page.enter_email(value)
             # Нажимаем на кнопку Получить код:
             page.btn_click_getcode()
-            # Если появится надпись "Введите код", значит указанное невалидное значение прошло проверку:
-            inputcode = page.find_elem_inputcode().text  # локатор на надпись "Введите код"
-            assert inputcode != "Введите код"
+            # Если появится надпись "Нужно ввести...", значит указанное невалидное значение не прошло проверку:
+            errorpass = auth_page.find_elem_errorpass().text  # локатор на надпись "Нужно ввести..."
+            assert "Нужно ввести" in errorpass
             result_status = "PASSED"
         except Exception:
             result_status = "FAILED"
