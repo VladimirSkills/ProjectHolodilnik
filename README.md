@@ -25,7 +25,7 @@
 
 ### Папка allure-report:
 Отчёт по пройденным тестам.
-<img src="https://drive.google.com/file/d/1SNgWiUWMm200XS-hoI8VOXzBuqtf3K9e/view?usp=sharing" width="80" height="100">
+<br><img src="https://antonov21vek.ru/data/documents/allure_report_1.jpg" width="500" height="230">
 
 
   
