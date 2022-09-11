@@ -1,0 +1,2 @@
+
+>>> test_search_notvalid[script-XSS] >>> Время выполнения теста: 9350мс (9.35сек)

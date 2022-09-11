@@ -1,0 +1,4 @@
+
+need_enter = Нужно ввести корректный email или телефон
+
+>>> test_registration_not_valid[     @mail.ru] >>> Время выполнения теста: 4474мс (4.474сек)

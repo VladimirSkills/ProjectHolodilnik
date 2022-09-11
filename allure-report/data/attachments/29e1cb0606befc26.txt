@@ -1,0 +1,4 @@
+
+need_enter = 
+
+>>> test_registration_not_valid[mail5@mail.mail] >>> Время выполнения теста: 3580мс (3.58сек)

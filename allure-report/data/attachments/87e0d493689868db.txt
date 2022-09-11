@@ -1,0 +1,2 @@
+
+>>> test_registration_not_valid[five5@ 123.com] >>> Время выполнения теста: 11781мс (11.781сек)

@@ -1,0 +1,2 @@
+
+>>> test_registration_not_valid[     @mail.ru] >>> Время выполнения теста: 1733мс (1.733сек)

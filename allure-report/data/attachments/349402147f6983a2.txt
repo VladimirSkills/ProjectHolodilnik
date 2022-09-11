@@ -1,0 +1,2 @@
+
+>>> test_registration_not_valid[five5@mail.r] >>> Время выполнения теста: 1694мс (1.694сек)

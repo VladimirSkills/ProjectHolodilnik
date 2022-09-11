@@ -1,0 +1,4 @@
+
+need_enter = Нужно ввести корректный email или телефон
+
+>>> test_registration_not_valid[five5@ 123.com] >>> Время выполнения теста: 3361мс (3.361сек)
