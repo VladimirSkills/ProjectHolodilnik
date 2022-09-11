@@ -315,8 +315,8 @@ class LocatorsProject:
     PCB_bBASKETPICKUPHERE = (By.XPATH, '//a[contains(text(), "Заберу здесь")]')  # [0]
     # КОРЗИНА. Оформление заказа. Способ оплаты
     PCB_bBASKETPAYMENT = (By.XPATH, '//span[contains(text(), "Картой / наличными")]')
-    # КОРЗИНА. Оформление заказа. Кнопка Оплатить
-    PCB_bBASKETPAY = (By.XPATH, '//button[contains(text(), "Оплатить")]')
+    # КОРЗИНА. Оформление заказа. Кнопка Оформить
+    PCB_bBASKETPAY = (By.XPATH, '//button[contains(text(), "Оформить")]')
     # КОРЗИНА. Оформление заказа. Подтверждение
     PCB_fBASKETORDEROK = (By.XPATH, '//div[@class="checkout__confirm-status"]')
     # КОРЗИНА. Локатор на кол-во товаров
