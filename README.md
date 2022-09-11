@@ -24,7 +24,9 @@
 В папке сохраняются скриншоты некоторых страниц.
 
 ### Папка allure-report:
-Отчёт по пройденным тестам. 
+Отчёт по пройденным тестам.
+<img src="https://drive.google.com/file/d/1SNgWiUWMm200XS-hoI8VOXzBuqtf3K9e/view?usp=sharing" width="80" height="100">
+
 
   
 <br><strong>ВНИМАНИЕ!!!
