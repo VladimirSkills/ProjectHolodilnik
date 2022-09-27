@@ -4,7 +4,6 @@ import pytest
 from selenium import webdriver
 from fake_useragent import UserAgent
 from selenium.webdriver.chrome.service import Service as ChromeService
-from webdriver_manager.chrome import ChromeDriverManager
 from selenium.webdriver.chrome.options import Options
 options = Options()
 ua = UserAgent()
@@ -22,20 +21,28 @@ def counter():
 
 @pytest.fixture(autouse=False, scope="session")
 def browser():
-    with webdriver.Chrome() as driver:
-        # driver = webdriver.Chrome(service=ChromeService(ChromeDriverManager().install()))
-        # options.add_argument("--headless")  # запуск браузера без графического интерфейса
-        options.add_argument('disable-infobars')  # отключить информационные панели
-        options.add_argument('--disable-notifications')  # отключить уведомления
-        options.add_argument('--disable-popup-blocking')  # отключить всплывающие окна
-        webdriver.Chrome(options=options)  # executable_path='C:/Python/chromedriver.exe')
-        options.add_argument(f"--user-agent={userAgent}")
-        # Переходим на страницу сайта
-        driver.maximize_window()
+    # headless mode - запуск без графического интерфейса (2 варианта ниже):
+    # options.add_argument('--headless')
+    # options.headless = True
+    options.add_argument('--enable-javascript')  # включаем JS в браузере
+    # отключить информационные панели:
+    options.add_experimental_option("excludeSwitches", ["enable-automation"])
+    # отключить всплывающее окно: Не удалось загрузить расширение:
+    options.add_experimental_option('useAutomationExtension', False)
+    options.add_argument('--disable-notifications')  # отключить уведомления
+    options.add_argument('--disable-popup-blocking')  # отключить блок всплывающих окон
+    options.add_argument('--ignore-certificate-errors')  # отключить проверку сертификата SSL
+    # Чтобы предотвратить обнаружение WebDriver, управляемого Selenium, добавим скрипт:
+    options.add_argument('--disable-blink-features=AutomationControlled')
+    options.add_argument(f'--user-agent={userAgent}')
+    # driver = webdriver.Chrome(options=options, executable_path='C:/Python/chromedriver.exe')
+    chromserv = ChromeService('C:/Python/chromedriver.exe')
+    driver = webdriver.Chrome(options=options, service=chromserv)
+    driver.maximize_window()
 
-        yield driver
+    yield driver
 
-        driver.quit()
+    driver.quit()
 
 
 @pytest.fixture(autouse=True)
