@@ -23,6 +23,11 @@
 ### Папка screenshots:
 В папке сохраняются скриншоты некоторых страниц.
 
+### Папка allure-report:
+Отчёт по пройденным тестам.
+<br><img src="https://antonov21vek.ru/data/documents/allure_report_1.jpg" width="500" height="230"><img src="https://antonov21vek.ru/data/documents/allure_report_2.jpg" width="500" height="230">
+
+
   
 <br><strong>ВНИМАНИЕ!!!
 <br>Тесты настроены на запуск через Run!</strong>
