@@ -21,12 +21,13 @@ def counter():
 
 @pytest.fixture(autouse=False, scope="session")
 def browser():
-    # headless mode - запуск без графического интерфейса (2 варианта ниже):
+    # headless mode - запуск без графического интерфейса (2 варианта):
     # options.add_argument('--headless')
     # options.headless = True
     options.add_argument('--enable-javascript')  # включаем JS в браузере
     # отключить информационные панели:
     options.add_experimental_option("excludeSwitches", ["enable-automation"])
+    options.add_argument("--disable-extensions")  # отключить расширения
     # отключить всплывающее окно: Не удалось загрузить расширение:
     options.add_experimental_option('useAutomationExtension', False)
     options.add_argument('--disable-notifications')  # отключить уведомления
@@ -34,10 +35,12 @@ def browser():
     options.add_argument('--ignore-certificate-errors')  # отключить проверку сертификата SSL
     # Чтобы предотвратить обнаружение WebDriver, управляемого Selenium, добавим скрипт:
     options.add_argument('--disable-blink-features=AutomationControlled')
+    # Отключает обнаружение фишинга на стороне клиента:
+    options.add_argument('--disable-client-side-phishing-detection')
     options.add_argument(f'--user-agent={userAgent}')
     # driver = webdriver.Chrome(options=options, executable_path='C:/Python/chromedriver.exe')
-    chromserv = ChromeService('C:/Python/chromedriver.exe')
-    driver = webdriver.Chrome(options=options, service=chromserv)
+    chroms = ChromeService('C:/Python/chromedriver.exe')
+    driver = webdriver.Chrome(options=options, service=chroms)
     driver.maximize_window()
 
     yield driver
