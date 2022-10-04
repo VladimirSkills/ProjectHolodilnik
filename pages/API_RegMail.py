@@ -12,7 +12,7 @@ class RegEmail:
     def get_api_email(self) -> json:
         """Получаем случайный адрес электронной почты"""
 
-        action = {'action': 'genRandomMailbox'}
+        action = {'action': 'genRandomMailbox', 'count': 1}
         res = requests.get(self.base_url, params=action)
         status_email = res.status_code
         try:
@@ -54,3 +54,25 @@ class RegEmail:
         except json.decoder.JSONDecodeError:
             result_code = res.text
         return result_code, status_code  # Получаем значение ключа: textBody, в котором находится код для регистрации
+
+
+"""Разберём небольшой пример:"""
+
+
+def get_api_email_example():
+    """Получаем случайный адрес электронной почты"""
+    action = {'action': 'genRandomMailbox', 'count': 1}
+    # count - выводит кол-во email (нам нужен один)
+    res = requests.get("https://www.1secmail.com/api/v1/", params=action)
+    status_email = res.status_code
+    result_email = res.json()
+    return result_email, status_email
+
+
+# запрос на получение виртуального почтового ящика
+result_email, status_email = get_api_email_example()
+# из запроса получаем email
+email_reg = result_email[0]
+# Если count будет равен больше 1, тогда email_reg нужно записать так: email_reg = result_email
+print(email_reg, '\\', status_email)
+# 051kbvea@kzccv.com \ 200
